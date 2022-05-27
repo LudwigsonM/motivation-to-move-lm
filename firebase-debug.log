@@ -1,0 +1,117 @@
+[debug] [2022-05-27T19:47:02.396Z] ----------------------------------------------------------------------
+[debug] [2022-05-27T19:47:02.397Z] Command:       /Users/morisseau/.nvm/versions/node/v14.19.3/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-05-27T19:47:02.397Z] CLI Version:   10.8.0
+[debug] [2022-05-27T19:47:02.397Z] Platform:      darwin
+[debug] [2022-05-27T19:47:02.398Z] Node Version:  v14.19.3
+[debug] [2022-05-27T19:47:02.402Z] Time:          Fri May 27 2022 15:47:02 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-05-27T19:47:02.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-27T19:47:02.450Z] Field ".emulators.hosting.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-05-27T19:47:02.453Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-27T19:47:02.453Z] > authorizing via signed-in user (ludwigson.dev@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-05-27T19:47:02.484Z] [hub] writing locator at /var/folders/sc/y2tgn40j6sncbjftq2tzs_b80000gn/T/hub-motivation-to-move-lm.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-05-27T19:47:02.507Z] defaultcredentials: writing to file /Users/morisseau/.config/firebase/ludwigson_dev_gmail.com_application_default_credentials.json
+[debug] [2022-05-27T19:47:02.509Z] Setting GAC to /Users/morisseau/.config/firebase/ludwigson_dev_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/morisseau/.config/firebase/ludwigson_dev_gmail.com_application_default_credentials.json"}}
+[debug] [2022-05-27T19:47:02.511Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/adminSdkConfig [none]
+[debug] [2022-05-27T19:47:02.944Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/adminSdkConfig 200
+[debug] [2022-05-27T19:47:02.945Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/adminSdkConfig {"projectId":"motivation-to-move-lm","storageBucket":"motivation-to-move-lm.appspot.com","locationId":"us-central"}
+[debug] [2022-05-27T19:47:02.987Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/motivation-to-move-lm/sites 
+[debug] [2022-05-27T19:47:03.827Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/motivation-to-move-lm/sites 200
+[debug] [2022-05-27T19:47:03.827Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/motivation-to-move-lm/sites {"sites":[{"name":"projects/motivation-to-move-lm/sites/motivation-to-move-lm","defaultUrl":"https://motivation-to-move-lm.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-05-27T19:47:03.828Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/webApps/-/config [none]
+[debug] [2022-05-27T19:47:04.164Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/webApps/-/config 200
+[debug] [2022-05-27T19:47:04.164Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/motivation-to-move-lm/webApps/-/config {"projectId":"motivation-to-move-lm","storageBucket":"motivation-to-move-lm.appspot.com","locationId":"us-central","apiKey":"AIzaSyCCEvUf9mDAsqpp4G4tFdpkl64vYApqrAE","authDomain":"motivation-to-move-lm.firebaseapp.com","messagingSenderId":"1087845733446"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5656 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5656\u001b[22m\u001b[24m"}}
+[debug] [2022-05-27T19:47:04.301Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-27T19:47:04.301Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-05-27T19:47:04.301Z] Starting Emulator UI with command {"binary":"node","args":["/Users/morisseau/.cache/firebase/emulators/ui-v1.6.6/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/morisseau/.cache/firebase/emulators/ui-v1.6.6/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-05-27T19:47:04.387Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/morisseau/code/motivation-to-move-lm/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/morisseau/code/motivation-to-move-lm/functions\" for Cloud Functions..."}}
+[debug] [2022-05-27T19:47:04.581Z] Validating nodejs source
+[debug] [2022-05-27T19:47:06.014Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-27T19:47:06.015Z] Building nodejs source
+[debug] [2022-05-27T19:47:06.015Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5001/motivation-to-move-lm/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/motivation-to-move-lm/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5656 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] [hosting] Rewriting /quote to http://localhost:5001/motivation-to-move-lm/us-central1/api for local Function us-central1/api
+[debug] [2022-05-27T19:47:14.568Z] >>> [apiv2][query] GET http://localhost:5001/motivation-to-move-lm/us-central1/api/quote 
+[debug] [2022-05-27T19:47:14.577Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-05-27T19:47:14.577Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-05-27T19:47:14.578Z] Accepted request GET /motivation-to-move-lm/us-central1/api/quote --> us-central1-api
+[debug] [2022-05-27T19:47:14.595Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-05-27T19:47:14.596Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-05-27T19:47:14.596Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-05-27T19:47:14.597Z] [worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: Assigning socketPath: /var/folders/sc/y2tgn40j6sncbjftq2tzs_b80000gn/T/fire_emu_98685.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: Assigning socketPath: /var/folders/sc/y2tgn40j6sncbjftq2tzs_b80000gn/T/fire_emu_98685.sock"}}
+[debug] [2022-05-27T19:47:14.597Z] [worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: BUSY"}}
+[debug] [2022-05-27T19:47:15.394Z] [runtime-status] [98685] Functions runtime initialized. {"cwd":"/Users/morisseau/code/motivation-to-move-lm/functions","node_version":"14.19.3"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Functions runtime initialized. {\"cwd\":\"/Users/morisseau/code/motivation-to-move-lm/functions\",\"node_version\":\"14.19.3\"}"}}
+[debug] [2022-05-27T19:47:15.395Z] [runtime-status] [98685] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Disabled runtime features: undefined"}}
+[debug] [2022-05-27T19:47:15.397Z] [runtime-status] [98685] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.398Z] [runtime-status] [98685] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.398Z] [runtime-status] [98685] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-05-27T19:47:15.398Z] [runtime-status] [98685] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.428Z] [runtime-status] [98685] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-05-27T19:47:15.429Z] [runtime-status] [98685] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-05-27T19:47:15.431Z] [runtime-status] [98685] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.432Z] [runtime-status] [98685] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.2.0","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.432Z] [runtime-status] [98685] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-05-27T19:47:15.432Z] [runtime-status] [98685] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.2.0","resolution":"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.2.0\",\"resolution\":\"/Users/morisseau/code/motivation-to-move-lm/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-05-27T19:47:15.523Z] [runtime-status] [98685] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-05-27T19:47:15.524Z] [runtime-status] [98685] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Running api in signature http"}}
+[debug] [2022-05-27T19:47:15.527Z] [runtime-status] [98685] Attempting to listen to socketPath: /var/folders/sc/y2tgn40j6sncbjftq2tzs_b80000gn/T/fire_emu_98685.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Attempting to listen to socketPath: /var/folders/sc/y2tgn40j6sncbjftq2tzs_b80000gn/T/fire_emu_98685.sock"}}
+[debug] [2022-05-27T19:47:15.530Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-05-27T19:47:15.531Z] [functions] Got req.url=/motivation-to-move-lm/us-central1/api/quote, mapping to path=/quote {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/motivation-to-move-lm/us-central1/api/quote, mapping to path=/quote"}}
+[debug] [2022-05-27T19:47:15.534Z] [runtime-status] [98685] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Ephemeral server handling GET request"}}
+[debug] [2022-05-27T19:47:15.539Z] <<< [apiv2][status] GET http://localhost:5001/motivation-to-move-lm/us-central1/api/quote 200
+[debug] [2022-05-27T19:47:15.539Z] <<< [apiv2][body] GET http://localhost:5001/motivation-to-move-lm/us-central1/api/quote [stream]
+[info] i  hosting: 127.0.0.1 - - [27/May/2022:19:47:15 +0000] "GET /quote HTTP/1.1" 200 16 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [27/May/2022:19:47:15 +0000] \"GET /quote HTTP/1.1\" 200 16 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36\""}}
+[debug] [2022-05-27T19:47:15.541Z] [runtime-status] [98685] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [98685] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-05-27T19:47:15.541Z] [worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-8c88511d-bc8c-4054-a01d-75896ead23b3]: IDLE"}}
+[debug] [2022-05-27T19:47:15.541Z] [work-queue] {"queueLength":0,"workRunningCount":0}
