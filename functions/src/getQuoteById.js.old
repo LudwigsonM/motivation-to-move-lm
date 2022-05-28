@@ -1,0 +1,19 @@
+import connectDb from "./connectDb";
+
+export function getQuoteById (req, res) {
+    const { quoteId } = req.params;
+    if (!quoteId) {
+        res.status(401).send('Invaild request');
+        return;
+    }
+    const db = connectDb();
+    db.collection("quotes").doc(quoteId).get()
+        .then(doc => {
+            let quote = doc.data();
+            quote.id = doc.id;
+            res.send(quote);
+        })
+        .catch(err => {
+            res.status(500).send(err);
+        });
+}
