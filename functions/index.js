@@ -5,15 +5,15 @@ import cors from "cors";
 // import { getQuoteById } from "./src/getQuoteById";
 import functions from "firebase-functions";
 
-import { getAllQuotes } from "./src/services/quotes.services.js";
+import { getAllQuotes, addQuote, getQuoteById } from "./src/services/quotes.services.js";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.get('/quotes', getAllQuotes ); //function:getAllQuotes 
-// app.get('/quotes/:quoteId', getQuoteById ); //function: getQuoteById
-// app.post('/quotes', addQuote); // function: addQuote
+app.get('/quotes/:quoteId', getQuoteById ); //function: getQuoteById
+app.post('/quotes', addQuote); // function: addQuote
 
 
 app.get('/test', (req, res) => {
